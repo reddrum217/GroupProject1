@@ -30,7 +30,7 @@ NFL players are celebrities and frequently viewed as role models by aspiring NFL
 ## APIs:
 
 * Primary
-  NFL Arrested API
+  * NFL Arrested API
   
 * Secondary
   * Flickr API
