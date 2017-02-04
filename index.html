@@ -1,63 +1,185 @@
 <!DOCTYPE html>
-<!-- this is html -->
 <html lang='en-us'>
 <head>
 
-    <meta charset='UTF-8'>
+  <meta charset='UTF-8'>
 	<meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
 
-    <title>NFL Arrested!</title>
+  <title>NFL Arrested!</title>
 
-	<link rel='stylesheet' type='text/css' href='assets/css/style.css'>
-
-	<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>
-
-	<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css'>
-
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+  <link href="assets/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  
+  <link href="assets/css/styleM.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  
+  <link rel="stylesheet" href="assets/css/styles.css">
+ 
 </head>
 
-	</body>
-	</html>
+<body>
+
+  <!-- Nav Header -->
+<header>
+  <nav class="black lighten-1" role="navigation" style="height:215px;">
+    <div class="nav-wrapper container">
+      <a id="logo-container" href="#" class="brand-logo">
+        <img src="assets/images/NFLLogo/NFL_Arrested_Logo.jpg" alt="NFL Arrested Logo" style="width:304px;height:215px; margin-left:-100px">
+      </a>
+      <div style="margin-left: 280px;">
+        <br>
+        <h5><span id="textUpdate1">Choose two Helmets to Find the Most-arrested NFL Player!</span></h5>
+        <h5><span id="textUpdate2"></span></h5>
+        <h5><span id="mostArrested"></span></h5>
+      </div>
+    </div>
+  </nav>
+</header>  
+  
+<!-- THIS IS THE BEGINNING OF IVONNE'S TEAM DISPLAY -->
+<main>
+  <div class="container" id="index-banner">
+    <div id='teamButtons' class='section'></div>
+    <div class='container'> 
+      <div class='row' id='teamSelection'>
+        <!-- 1st Team Selected -->
+        <div class='col m3 pull-m1' id='teamSelection1'></div>
+        <div class='col m3 pull-m1'>
+          <div class='panel panel-default'>
+            <h5><span class="card-title" id="teamName1"></span></h5>
+            <div class='panel-heading' id='teamSelected1'></div>
+            <div class='panel-body' id='playerButtonsLeft'></div>
+          </div>
+        </div>
+        <!-- 2nd Team Selected -->
+        <div class='col m3 pull-m2' id='teamSelection2'></div>
+        <div class='col m3 pull-m2'>
+          <div class='panel panel-default'>
+            <h5><span class="card-title" id="teamName2"></span></h5>
+            <div class='panel-heading' id='teamSelected2'></div>
+            <div class='panel-body' id='playerButtonsRight'></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- THIS IS THE END OF IVONNE'S TEAM DISPLAY -->
+
+<!-- Animated Character display -->
+  <div id="field-background">
+    <div class="container" id="charactersContainer">
+      <!-- <div class="section"> -->
+        <!--   Icon Section   -->
+        <div class="row">
+          <!-- Character Left is Player1  -->
+          <div class="col s12 m6">   
+            <div id='characterLeft'></div>
+          </div>
+          <!-- Character Right is Player2 -->
+          <div class="col s12 m6">    
+            <div id='characterRight'></div>
+          </div>
+        </div>
+      <!-- </div> -->
+    </div>
+  </div>
+
+<!-- materialize card -->
+  <div id ="materialCard">
+    <div class="container">
+        <div class="row">
+          <!-- Player Card #1 -->
+          <div class="col s2 m5" class="card small">
+            <div class="card light-blue darken-4">
+              <div class="card-content white-text">
+                <span class="card-title playerCard"></span>'
+                <div id='playerPic'></div>
+                <p id="draftedByTeam"></p>
+                <p id="arrestCount"></p>
+                <br>
+                <marquee behavior="scroll" direction="left" class="marquee" id="marqueePlayer1"></marquee>
+              </div>
+              <div class="card-action" id="card-action">
+                <!-- <a href="#">links attached ot card-action</a> -->
+              </div>
+            </div>
+          </div>
+          <!-- Player Card #2 added 1.18.17 ik -->
+          <div class="col s2 m5 push-m2" class="card small">
+            <div class="card light-blue darken-4">
+              <div class="card-content white-text">
+                <span class="card-title playerCard2"></span>
+                <div id='playerPic2'></div>
+                <p id="draftedByTeam2"></p>
+                <p id="arrestCount2"></p>
+                <br>
+                <marquee behavior="scroll" direction="left" class="marquee" id="marqueePlayer2"></marquee>
+              </div>
+              <div class="card-action" id="card-action2">
+                <!-- <a href="#">Possible link more info</a> -->
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+</div>
+</main>
+<!-- materialize card end -->
+
+<!-- materialize css fixed for sticky footer must use header, main, footer page-footer footer-copyright smaller -->
+  <footer class="page-footer orange">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Sheri Mathews/Ivonne Komis</h5>
+          <p class="grey-text text-lighten-4">RCB Team Project Jan 2017</p>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">NoMore.Org</h5>
+          <ul>
+            <li><a class="white-text" href="http://nomore.org/">Link to No More..Together we can end Domestic Violence</a></li>
+            <li><a class="white-text" href="#!"></a></li>
+          </ul>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">NFLpa.com</h5>
+          <ul>
+            <li><a class="white-text" href="https://www.nflpa.com/active-players/drug-policies">Link to Players Association: Drug Program Resources. 60 Years of courage.sacrifice.vision</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+        <a class="orange-text text-lighten-3" href="http://materializecss.com">made using materialize.css</a>
+      </div>
+    </div>
+  </footer>
 
 
-		<div class='container-fluid'>
-				<div id='teamButtons'></div>	
-		</div>
+ <!-- Copied from Sheri's Animation html -->
+    <script type = "text/javascript"
+         src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    
+      <script type = "text/javascript" 
+         src = "https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
 
-		<div id='viewImage'></div>
-		<div id='players'></div>
- 		<div id='characterLeft'></div>
-		<div id='characterRight'></div>
+      <script
+    src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"
+    integrity="sha256-eGE6blurk5sHj+rmkfsGYeKyZx3M4bG+ZlFyA7Kns7E="
+    crossorigin="anonymous"></script>
+    
+  <!--  Scripts-->
+    <script src='https://code.jquery.com/jquery.js'></script>
+    <script type = "text/javascript" src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    
+    <script src="assets/javascript/init.js"></script>
+    <script src="assets/javascript/materialize.js"></script>
+    <!-- <script src="assets/javascript/smAnimation.js"></script> -->
+    <script type = "text/javascript" language = "javascript"></script>
+    <script src="assets/javascript/nflarrested.js"></script>
+    <script src="assets/javascript/smAnimation.js"></script>
 
-		<div class='container'>
-			<div class='row-fluid' id='teamSelection'>
-				<!-- 1st Team Selected -->
-			  	<div class='col-md-2' id='teamSelection1'></div>
-			  		<div class='col-md-4'>
-			    		<div class='panel panel-default'>
-			      			<div class='panel-heading' id='teamSelected1'></div>
-			      			<div class='panel-body' id='playerButtonsLeft'></div>
-			    		</div>
-			  		</div>
-			  	<div class='col-md-2'></div>
-			  	
-			  	<!-- 2nd Team Selected -->
-			  	<div class='col-md-2' id='teamSelection2'></div>
-			  		<div class='col-md-4'>
-			    		<div class='panel panel-default'>
-			      			<div class='panel-heading' id='teamSelected2'></div>
-			      			<div class='panel-body' id='playerButtonsRight'></div>
-			    		</div>
-			  		</div>
-			  	<div class='col-md-2'></div>
-			</div>
-		</div>
-
-
-		<script src='https://code.jquery.com/jquery.js'></script>
-		<!-- <script type='text/javascript src='assets/javascript/nflarrested.js></script> -->
-		<script type='text/javascript' src='assets/javascript/nflarrested.js'></script>
- 
-
-	</body>
+  </body>
 </html>

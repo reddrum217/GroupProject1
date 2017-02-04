@@ -1,0 +1,36 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+	font-size: inherit;
+}
+
+
+.btn.waves-effect {
+	margin: 5px;
+    height: auto;
+    min-height: 20px;
+    line-height: 20px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-right: 50px;
+    padding-left: 50px;
+/*    play with this to get them the same size*/
+    min-width: 100px;
+}
+
+.btn.waves-effect .material-icons {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    margin-top: -10px;
+    margin-left: 0;
+}
