@@ -1,6 +1,4 @@
-# GroupProject1
-
-## NFL Arrested!
+# NFL Arrested!
 
 ***
 
